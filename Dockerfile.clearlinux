@@ -1,0 +1,8 @@
+# Build container based on Fedora
+FROM clearlinux:base
+
+RUN swupd bundle-add os-clr-on-clr
+
+WORKDIR /root/acrn
+
+CMD ["/bin/bash"]

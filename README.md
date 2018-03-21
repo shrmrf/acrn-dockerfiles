@@ -56,7 +56,7 @@ $ sudo docker run -ti -v $PWD:/root/acrn centos7
 ```
 
 **Note:** if you encounter permission issues within the container (as it
-happens in Fedora 27), try adding the `:z` parameter to the mount option.
+happens on a Fedora 27 host), try adding the `:z` parameter to the mount option.
 This will unlock the permission restriction (that comes from SElinux). Your
 command-line would then be:
 ```
@@ -73,3 +73,8 @@ of the components. Here is an example:
 # cd acrn-hypervisor
 # make PLATFORM=uefi RELEASE=1
 ```
+
+You can do this for all build combinations and also try to build the `acrn-devicemodel`.
+All the build dependencies and tools are pre-installed in the container as well as a
+couple of useful tools (`git` and `vim`) so you can directly edit files to experiment
+from within the container.
