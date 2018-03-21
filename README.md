@@ -55,6 +55,15 @@ $ cd ~/acrn
 $ sudo docker run -ti -v $PWD:/root/acrn centos7
 ```
 
+**Note:** if you encounter permission issues within the container (as it
+happens in Fedora 27), try adding the `:z` parameter to the mount option.
+This will unlock the permission restriction (that comes from SElinux). Your
+command-line would then be:
+```
+$ cd ~/acrn
+$ sudo docker run -ti -v $PWD:/root/acrn:z centos7
+```
+
 ## Build the ACRN components
 
 The steps above place you inside the container and give you access to
