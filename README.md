@@ -1,10 +1,10 @@
-# Build containers for Project ACRN
+# Build containers for [Project ACRN](https://projectacrn.org)
 
 ## Introduction
 
 This repository contains a number of Dockerfile that include
 all the build tools and dependencies to build the ACRN Project
-components, i.e. the `acrn-hypervisor` and `acrn-devicemodel`
+components, i.e. the [`acrn-hypervisor`](https://github.com/projectacrn/acrn-hypervisor) and [`acrn-devicemodel`](https://github.com/projectacrn/acrn-devicemodel)
 
 The workflow is pretty simple and can be summarized in these few steps:
 
